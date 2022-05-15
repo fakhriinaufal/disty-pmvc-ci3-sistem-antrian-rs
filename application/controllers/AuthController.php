@@ -6,7 +6,7 @@ class AuthController extends CI_Controller
 
 	public function login()
 	{
-		$data['pageTitle'] = "Login";
+		$data['pageTitle'] = "Sistem Antrian RS - Login";
 		$this->load->view('layouts/auth/header', $data);
 		$this->load->view('pages/auth/login');
 		$this->load->view('layouts/auth/footer');
@@ -14,7 +14,7 @@ class AuthController extends CI_Controller
 
 	public function register()
 	{
-		$data['pageTitle'] = "Register";
+		$data['pageTitle'] = "Sistem Antrian RS - Register";
 		$this->load->view('layouts/auth/header', $data);
 		$this->load->view('pages/auth/register');
 		$this->load->view('layouts/auth/footer');
