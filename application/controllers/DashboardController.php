@@ -13,6 +13,7 @@ class DashboardController extends CI_Controller
 	public function loadView($page, $data)
 	{
 		$this->load->view('layouts/dashboard/header', $data);
+		$this->load->view('layouts/dashboard/sidebar', $data);
 		$this->load->view('pages/dashboard/' . $page);
 		$this->load->view('layouts/dashboard/footer');
 	}
